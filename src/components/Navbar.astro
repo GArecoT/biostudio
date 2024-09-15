@@ -6,7 +6,9 @@ import { Icon } from 'astro-icon/components';
       <img src="logo horizontal verde.png" class="logo-navbar" />
     </a>
     <div class="flex">
-      <Icon class="cursor-pointer mr-2 btn-navbar" name="ic:baseline-whatsapp" />
+      <a href="https://api.whatsapp.com/send?phone=5511933990730&text=Oi.%20Vi%20o%20contato%20no%20site" target="_blank">
+        <Icon class="cursor-pointer mr-2 btn-navbar" name="ic:baseline-whatsapp" />
+      </a>
       <Icon class="cursor-pointer btn-navbar" name="material-symbols-light:menu" id="btn_navbar_menu" />
   </div>
 </div>
@@ -16,17 +18,17 @@ import { Icon } from 'astro-icon/components';
   </div>
   <div style="max-height: calc(100vh - 60px); overflow-y: scroll" class="flex-col content-center justify-center w-full text-center">
     <div class="font-light texto-main-navbar">
-      <a>HOME</a>
+      <a href="/">HOME</a>
       <div class="divider" />
     </div>
     <div class="font-light texto-main-navbar">
       <a>PROJETOS</a>
     </div>
     <div class="text-gray-400 mt-10 texto-sub-navbar">
-      <a>FAZENDA 5 MARIAS</a>
+      <a href="fazenda_5_marias">FAZENDA 5 MARIAS</a>
     </div>
     <div class="text-gray-400 mt-10 texto-sub-navbar">
-      <a>APARTAMENTO VH</a>
+      <a>APARTAMENTO NB</a>
     </div>
     <div class="text-gray-400 mt-10 texto-sub-navbar">
       <a>CONSULTÓRIO FF</a>
@@ -88,10 +90,10 @@ btn_close.addEventListener("click", () => {
   }
 }
 .texto-main-navbar{
-  font-size: 2.5rem
+  font-size: 2rem
 }
 .texto-sub-navbar{
-  font-size: 2rem
+  font-size: 1.5rem
 }
 .logo-navbar{
   width: 250px; 
@@ -105,10 +107,10 @@ btn_close.addEventListener("click", () => {
 
 @media only screen and (max-width: 640px) {
   .texto-main-navbar{
-    font-size: 2rem
+    font-size: 1.5rem
   }
   .texto-sub-navbar{
-    font-size: 1.5rem
+    font-size: 1rem
   }
   .logo-navbar{
     width: 200px; 

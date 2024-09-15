@@ -157,6 +157,24 @@ import { Icon } from 'astro-icon/components';
     left: calc(50% + 200px);
     margin-top: -3px
   }
+
+  @media only screen and (max-width: 1450px) {
+    .texto-conteudo{
+      font-size: 1.8rem
+    }
+  .texto-cards-home{
+    font-size: 1.3rem
+    }
+  }
+  @media only screen and (max-width: 1095px) {
+    .texto-conteudo{
+      font-size: 1.5rem
+    }
+  .texto-cards-home{
+    font-size: 1.2rem
+    }
+  }
+
   @media only screen and (max-width: 850px) {
   .texto-esquerda-divider{
       position: relative;
@@ -170,23 +188,7 @@ import { Icon } from 'astro-icon/components';
       font-size: 0.8rem
     }
   }
-  @media only screen and (max-width: 1095px) {
-    .texto-conteudo{
-      font-size: 1.5rem
-    }
-  .texto-cards-home{
-    font-size: 1.2rem
-    }
-  }
-  @media only screen and (max-width: 1450px) {
-    .texto-conteudo{
-      font-size: 1.8rem
-    }
-  .texto-cards-home{
-    font-size: 1.3rem
-    }
 
-  }
 </style>
 <script>
 import AOS from 'aos';
