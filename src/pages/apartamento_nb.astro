@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components';
 ---
-<Layout title="FAZENDA 5 MARIAS">
+<Layout title="APARTAMENTO NB">
 
   <div class="bg-white sticky md:top-[90px] top-[80px]" style="z-index: 1;">
       <div class="bg-white sticky md:top-[90px] top-[80px]">
@@ -131,14 +131,14 @@ import { Icon } from 'astro-icon/components';
   </div>
 
   <div class="w-screen flex justify-between bg-[#e7d0b0] p-5">
-    <div class="flex content-center texto-conteudo font-light">
+    <a href="fazenda_5_marias" class="flex content-center texto-conteudo font-light">
       <Icon name="material-symbols-light:arrow-left-alt" class="botao-seta h-full mr-3" />
       <span>ANTERIOR</span>
-    </div>
-    <div class="flex content-center texto-conteudo font-light">
+    </a>
+    <a class="flex content-center texto-conteudo font-light">
       <span>PRÓXIMO</span>
       <Icon name="material-symbols-light:arrow-right-alt" class="botao-seta h-full ml-3" />
-    </div>
+    </a>
   </div>
 
 </Layout>
