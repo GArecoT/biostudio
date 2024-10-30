@@ -1,25 +1,55 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 ---
-<div class="w-full bg-red bg-white flex justify-between p-5 content-center" style="max-height: 100px; position: sticky; top: 0px; z-index: 1;">
+
+<div
+  class="w-full flex justify-center bg-white"
+  style="max-height: 100px; position: sticky; top: 0px; z-index: 1;"
+>
+  <div
+    class="w-full bg-red bg-white flex justify-between p-5 content-center page"
+  >
     <a href="/">
       <img src="logo horizontal verde.png" class="logo-navbar" />
     </a>
     <div class="flex">
-      <a href="https://api.whatsapp.com/send?phone=5511933990730&text=Oi.%20Vi%20o%20contato%20no%20site" target="_blank">
-        <Icon class="cursor-pointer mr-2 btn-navbar" name="ic:baseline-whatsapp" />
+      <a
+        href="https://api.whatsapp.com/send?phone=5511933990730&text=Oi.%20Vi%20o%20contato%20no%20site"
+        target="_blank"
+      >
+        <Icon
+          class="cursor-pointer mr-2 btn-navbar"
+          name="ic:baseline-whatsapp"
+        />
       </a>
-      <Icon class="cursor-pointer btn-navbar" name="material-symbols-light:menu" id="btn_navbar_menu" />
+      <Icon
+        class="cursor-pointer btn-navbar"
+        name="material-symbols-light:menu"
+        id="btn_navbar_menu"
+      />
+    </div>
   </div>
 </div>
-<div class="w-screen h-screen z-10 fixed hidden bg-white top-0" id="navbar_menu" style="animation: show 500ms forwards;">
+<div
+  class="w-screen h-screen z-10 fixed hidden bg-white top-0"
+  id="navbar_menu"
+  style="animation: show 500ms forwards;"
+>
   <div class="flex w-full justify-end p-5">
-    <Icon class="cursor-pointer" name="material-symbols-light:close" id="btn_navbar_menu_close" style="color: #5c7545; height: 60px; width: 50px;" />
+    <Icon
+      class="cursor-pointer"
+      name="material-symbols-light:close"
+      id="btn_navbar_menu_close"
+      style="color: #5c7545; height: 60px; width: 50px;"
+    />
   </div>
-  <div style="max-height: calc(100vh - 60px); overflow-y: scroll" class="flex-col content-center justify-center w-full text-center">
+  <div
+    style="max-height: calc(100vh - 60px); overflow-y: scroll"
+    class="flex-col content-center justify-center w-full text-center"
+  >
     <div class="font-light texto-main-navbar">
       <a href="/">HOME</a>
-      <div class="divider" />
+      <div class="divider"></div>
     </div>
     <div class="font-light texto-main-navbar">
       <a>PROJETOS</a>
@@ -43,84 +73,80 @@ import { Icon } from 'astro-icon/components';
       <a href="salao">SALÃO DE BELEZA EM</a>
     </div>
     <div class="font-light texto-main-navbar">
-      <div class="divider" />
+      <div class="divider"></div>
       <a href="quem_somos">QUEM SOMOS</a>
     </div>
     <div class="font-light texto-main-navbar">
-      <div class="divider" />
+      <div class="divider"></div>
       <a>CONTATO</a>
-      <div class="divider" />
+      <div class="divider"></div>
     </div>
-
   </div>
-
 </div>
 <script>
-const btn = document.querySelector("#btn_navbar_menu");
-const navbar_menu = document.querySelector('#navbar_menu')
-const btn_close = document.querySelector('#btn_navbar_menu_close')
-btn.addEventListener("click", () => {
-  navbar_menu.style.animationName = 'show'
-  navbar_menu.classList.remove('hidden')
-});
-btn_close.addEventListener("click", () => {
-  navbar_menu.style.animationName = 'hide'
-  setTimeout(()=>{
-    navbar_menu.classList.add('hidden')
-  },500)
-});
+  const btn = document.querySelector("#btn_navbar_menu");
+  const navbar_menu = document.querySelector("#navbar_menu");
+  const btn_close = document.querySelector("#btn_navbar_menu_close");
+  btn.addEventListener("click", () => {
+    navbar_menu.style.animationName = "show";
+    navbar_menu.classList.remove("hidden");
+  });
+  btn_close.addEventListener("click", () => {
+    navbar_menu.style.animationName = "hide";
+    setTimeout(() => {
+      navbar_menu.classList.add("hidden");
+    }, 500);
+  });
 </script>
 <style>
-@keyframes show {
-
-  0% {
-    opacity: 0;
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100%{
-    opacity: 1;
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-}
-@keyframes hide {
-
-  0% {
-    opacity: 1;
+  .texto-main-navbar {
+    font-size: 2rem;
   }
-  100%{
-    opacity: 0;
+  .texto-sub-navbar {
+    font-size: 1.5rem;
   }
-}
-.texto-main-navbar{
-  font-size: 2rem
-}
-.texto-sub-navbar{
-  font-size: 1.5rem
-}
-.logo-navbar{
-  width: 250px; 
-  object-fit: cover;
-}
-.btn-navbar{
-  color: #5c7545; 
-  height: 60px; 
-  width: 50px;
-}
-
-@media only screen and (max-width: 640px) {
-  .texto-main-navbar{
-    font-size: 1.5rem
-  }
-  .texto-sub-navbar{
-    font-size: 1rem
-  }
-  .logo-navbar{
-    width: 200px; 
-    height: 49px;
+  .logo-navbar {
+    width: 250px;
     object-fit: cover;
   }
-  .btn-navbar{
-  color: #5c7545; 
-  height: 45px; 
-  width: 45px;
+  .btn-navbar {
+    color: #5c7545;
+    height: 60px;
+    width: 50px;
   }
-}
+
+  @media only screen and (max-width: 640px) {
+    .texto-main-navbar {
+      font-size: 1.5rem;
+    }
+    .texto-sub-navbar {
+      font-size: 1rem;
+    }
+    .logo-navbar {
+      width: 200px;
+      height: 49px;
+      object-fit: cover;
+    }
+    .btn-navbar {
+      color: #5c7545;
+      height: 45px;
+      width: 45px;
+    }
+  }
 </style>
