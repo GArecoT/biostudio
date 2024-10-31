@@ -15,23 +15,24 @@ import { Icon } from "astro-icon/components";
         <div class="grid md:grid-cols-2 gap-4 pt-10 pb-5 px-5">
           <label class="input input-bordered flex items-center gap-2">
             Nome *
-            <input name="nome" type="text" class="grow" required />
+            <input name="Nome" type="text" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Sobrenome *
-            <input type="text" class="grow" required />
+            <input name="Sobrenome" type="text" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Email *
-            <input type="email" class="grow" required />
+            <input name="Email" type="email" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Telefone *
-            <input type="tel" class="grow" required />
+            <input name="Telefone" type="tel" class="grow" required />
           </label>
         </div>
         <div class="w-full px-5">
           <textarea
+            name="Mensagem"
             class="textarea textarea-bordered w-full"
             required
             placeholder="Mensagem"></textarea>
