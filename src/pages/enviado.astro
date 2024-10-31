@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Sucesso">
+  <div
+    class="flex justify-center items-center"
+    style="min-height: calc(100vh - 468px);"
+  >
+    <div class="rounded-3xl border-grey border-2 px-14 py-10">
+      <div class="flex justify-center py-2">
+        <Icon name="icon-park-outline:check-one" size="50px" />
+      </div>
+      <h1 style="font-size: 1.5rem" class="text-center">Obrigado</h1>
+      <p>Formulário enviado com sucesso!</p>
+      <a href="/">
+        <button
+          class="btn bg-[#5c7545] text-white w-full hover:bg-[#4f623d] mt-5"
+          >Ok</button
+        >
+      </a>
+    </div>
+  </div></Layout
+>

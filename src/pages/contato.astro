@@ -1,37 +1,44 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import type { APIRoute } from "astro";
 import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="CONTATO">
   <div class="flex justify-center" id="page-cadastro">
     <div class="page">
-      <form>
+      <form
+        action="https://formcarry.com/s/0AKdqZRRC5X"
+        method="POST"
+        enctype="multipart/form-data"
+      >
         <div class="grid md:grid-cols-2 gap-4 pt-10 pb-5 px-5">
           <label class="input input-bordered flex items-center gap-2">
             Nome *
-            <input type="text" class="grow" />
+            <input name="nome" type="text" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Sobrenome *
-            <input type="text" class="grow" />
+            <input type="text" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Email *
-            <input type="email" class="grow" />
+            <input type="email" class="grow" required />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Telefone *
-            <input type="tel" class="grow" />
+            <input type="tel" class="grow" required />
           </label>
         </div>
         <div class="w-full px-5">
           <textarea
             class="textarea textarea-bordered w-full"
+            required
             placeholder="Mensagem"></textarea>
         </div>
         <div class="flex justify-end w-full p-5">
           <button
+            id="enviar"
             type="submit"
             class="btn bg-[#5c7545] text-white hover:bg-[#53693f]"
             >Enviar</button
@@ -41,6 +48,13 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </Layout>
+<script>
+  // document.querySelector("form").addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //
+  //   const req = {};
+  // });
+</script>
 <style>
   #page-cadastro {
     min-height: calc(100vh - 468px);
