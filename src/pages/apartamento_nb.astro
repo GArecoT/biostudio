@@ -3,16 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<Layout title="APARTAMENTO NB">
+<Layout title="APTO VH">
   <div class="flex justify-center">
     <div class="page">
       <div class="bg-white sticky md:top-[90px] top-[80px]" style="z-index: 1;">
         <div class="bg-white sticky md:top-[90px] top-[80px]">
           <div class="divider"></div>
           <div class="flex justify-between px-5 md:pb-5 texto-cards-home">
-            <div>APARTAMENTO NB</div>
+            <div>APTO VH</div>
             <div class="centralizar-absolute font-light hidden md:block">
-              2024 SÃO PAULO
+              2024
+            </div>
+            <div class="centralizar-absolute font-light hidden md:block">
+              SÃO PAULO
             </div>
             <span>COMERCIAL</span>
           </div>
@@ -22,187 +25,219 @@ import { Icon } from "astro-icon/components";
       <div class="overflow-hidden">
         <div class="flex justify-center">
           <div
-            class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5"
+            class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5 pr-10"
+          >
+            <div class="lg:w-[50%] md:w-[60%] flex relative md:pr-10">
+              <img
+                class="w-full md:h-[500px] h-[400px] object-cover rounded"
+                src="01_sala 1.png"
+              />
+              <div
+                class="-rotate-90 right-[-60px] md:right-[-20px] top-[30px] absolute"
+              >
+                Área Social
+              </div>
+            </div>
+            <div
+              class="lg:w-[50%] md:w-[40%] w-full content-center md:pr-5 lg:pr-20"
+            >
+              <p
+                class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
+              >
+                O Apto VH é o projeto de um apartamento residencial de 65m²,
+                localizado no bairro Butantã, em São Paulo. Nosso objetivo
+                buscou melhorar a experiência do usuário, oferecendo conforto,
+                funcionalidade e promovendo o bem-estar. O programa de áreas
+                inclui hall social integrado à sala de jantar e estar, cozinha
+                com área de serviço, um banheiro e dois dormitórios, onde um
+                deles foi adaptado para atuar como home office e quarto de
+                hóspedes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full md:flex justify-center mb-10 relative"
+          data-aos="fade-up"
+        >
+          <div
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10"
           >
             <img
-              class="lg:w-[50%] md:w-[50%] w-full md:h-[600px] h-[300px] object-cover rounded"
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
+              src="02_sala 2.png"
+            />
+            <div class="absolute -rotate-90 right-[-20px] top-[40px]">
+              Área Social
+            </div>
+          </div>
+          <div
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10"
+          >
+            <img
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
               src="coz-cena 2.Denoiser.jpg"
             />
-            <div
-              class="lg:w-[50%] md:w-[50%] w-full content-center md:pr-5 lg:pr-20"
-            >
-              <p
-                class="md:text-right texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
-              >
-                No coração de São Paulo, a Bio Studio Arquitetura Consciente
-                transformou um apartamento urbano em um exemplo de
-                sustentabilidade e bem-estar. Este projeto reflete nosso
-                compromisso em criar espaços que harmonizam modernidade,
-                conforto e respeito ao meio ambiente.
-              </p>
+            <div class="absolute -rotate-90 right-[-5px] top-[25px]">
+              Cozinha
             </div>
           </div>
         </div>
-        <!-- <div> -->
-        <!--   <div class="divider pt-0 mt-0" /> -->
-        <!--   <div class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"> -->
-        <!--     <div class="texto-mini text-gray-500  pr-5">EQUIPE ENVOLVIDA</div> -->
-        <!--     <div class="text-right md:absolute md:left-[320px]">LARA MAKSOUD, MARIANA POLLACHI, TATIANA VELLA E ISABEL AMMANN</div> -->
-        <!--   </div> -->
-        <!--   <div class="divider" /> -->
-        <!-- </div> -->
-        <div>
-          <div class="divider pt-0 mt-0"></div>
-          <div
-            class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 pr-5">DESIGN</div>
-            <div class="text-right md:absolute nome-pessoas">TATIANA VELLA</div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <div>
-          <div
-            class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">
-              ILUSTRAÇÕES
-            </div>
-            <div class="text-right md:absolute nome-pessoas">ISABEL SAAD</div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <!-- <div> -->
-        <!--   <div class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"> -->
-        <!--     <div class="texto-mini text-gray-500 md:pr-40 pr-5">SUSTENTABILIDE</div> -->
-        <!--     <div class="text-right md:absolute md:left-[320px]">MATERIAIS REUTILIZADOS</div> -->
-        <!--   </div> -->
-        <!--   <div class="divider" /> -->
-        <!-- </div> -->
-        <div>
-          <div
-            class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">PROJETO</div>
-            <div class="text-right md:absolute nome-pessoas">LARA MAKSOUD</div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <div>
-          <div
-            class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">ÁREA</div>
-            <div class="text-right md:absolute nome-pessoas">200 m²</div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <div class="w-full flex justify-center my-10">
-          <img
-            class="object-cover rounded w-screen max-w-[1700px] md:h-[800px] h-[400px]"
-            src="dorm-cena2.Denoiser.jpg"
-            data-aos="fade-up"
-          />
-        </div>
-        <div>
-          <div
-            class="md:ml-[50%] flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">
-              SOBRE O PROJETO
-            </div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <div>
-          <div
-            class="md:ml-[50%] flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">ÁREA</div>
-            <div class="text-right texto-esquerda-divider">200 M2</div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <div>
-          <div
-            class="md:ml-[50%] flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
-          >
-            <div class="texto-mini text-gray-500 md:pr-40 pr-5">DESTAQUE</div>
-            <div class="text-right texto-esquerda-divider">
-              INTEGRAÇÃO HOME OFFICE
-            </div>
-          </div>
-          <div class="divider"></div>
-        </div>
-        <!-- <div> -->
-        <!--   <div class="md:ml-[50%] flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"> -->
-        <!--     <div class="texto-mini text-gray-500 md:pr-40 pr-5">DIFERENCIAL</div> -->
-        <!--     <div class="text-right texto-esquerda-divider">VENTILAÇÃO CRUZADA</div> -->
-        <!--   </div> -->
-        <!--   <div class="divider" /> -->
-        <!-- </div> -->
         <div class="flex justify-center">
           <div
-            class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5"
+            class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5 pr-10"
           >
+            <div class="lg:w-[50%] md:w-[60%] flex relative md:pr-10">
+              <img
+                class="w-full md:h-[500px] h-[400px] object-cover rounded"
+                src="04_cozinha 3.jpg"
+              />
+              <div
+                class="-rotate-90 right-[-50px] md:right-[-10px] top-[30px] absolute"
+              >
+                Cozinha
+              </div>
+            </div>
             <div
-              class="lg:w-[50%] md:w-[40%] w-full md:pl-5 lg:pl-20 content-center"
+              class="lg:w-[50%] md:w-[40%] w-full content-center md:pr-5 lg:pr-20"
             >
               <p
-                class="texto-conteudo align-middle text-gray-700 md:px-0 mb-10 px-5 py-5 md:py-0 font-medium"
+                class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
               >
-                Sustentabilidade Urbana:
-              </p>
-              <p
-                class="texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
-              >
-                O apartamento foi projetado com foco em eficiência energética e
-                uso responsável de recursos. Equipado com iluminação LED e
-                eletrodomésticos de baixo consumo, o espaço reduz
-                significativamente a pegada ecológica dos moradores. Materiais
-                reciclados e de origem sustentável foram utilizados em todo o
-                projeto, garantindo uma construção mais ecológica.
+                O projeto priorizou funcionalidade, conforto e identidade,
+                dispondo de marcenaria sob medida, iluminação planejada e o uso
+                de revestimentos e cores suaves. Tons claros nas paredes e
+                forros ampliam os espaços e valorizam a luz natural, enquanto as
+                madeiras adicionam aconchego ambiental. O verde nos
+                revestimentos do banheiro, cozinha e área de serviço revitalizam
+                a fadiga mental e reforçam tranquilidade emocional; e o azul,
+                exposto nos painéis ripados do dormitório cria uma atmosfera de
+                serenidade e relaxamento que auxilia no sono.
               </p>
             </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex justify-center mt-10 mb-5 relative pr-10"
+          data-aos="fade-up"
+        >
+          <img
+            class="object-cover rounded w-full max-w-[1700px] md:h-[800px] h-[300px]"
+            src="05_dorm-cena3.Denoiser.jpg"
+          />
+          <div class="absolute -rotate-90 right-[-5px] top-[20px]">Quarto</div>
+        </div>
+        <div
+          class="w-full md:flex justify-center mb-10 relative"
+          data-aos="fade-up"
+        >
+          <div
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10"
+          >
             <img
-              class="lg:w-[50%] md:w-[60%] w-full md:h-[1000px] h-[500px] object-cover rounded"
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
               src="banh - cena 2.Denoiser.jpg"
             />
+            <div class="absolute -rotate-90 right-[-10px] top-[30px]">
+              Banheiro
+            </div>
           </div>
-        </div>
-        <div class="flex justify-center pt-10">
           <div
-            class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5"
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10"
           >
             <img
-              class="lg:w-[50%] md:w-[60%] w-full md:h-[1000px] h-[500px] object-cover rounded"
-              src="dorm-cena1.Denoiser.jpg"
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
+              src="07_home office - cena1.Denoiser.jpg"
             />
-            <div
-              class="lg:w-[50%] md:w-[40%] w-full md:pr-5 lg:pr-20 content-end"
-            >
-              <p
-                class="texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
-              >
-                Neste apartamento em São Paulo, a Bio Studio Arquitetura
-                Consciente demonstra como é possível criar um espaço urbano que
-                é ao mesmo tempo moderno.
-              </p>
-              <img
-                class="w-full md:h-[600px] h-[400px] object-cover rounded"
-                src="coz-cena3.Alpha.Denoiser.jpg"
-                data-aos="fade-up"
-              />
+            <div class="absolute -rotate-90 right-[-25px] top-[45px]">
+              Home Office
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-center my-10">
+        <div
+          class="w-full flex justify-center mt-10 mb-5 relative pr-10"
+          data-aos="fade-up"
+        >
           <img
-            class="object-cover rounded w-screen max-w-[1700px] h-[400px] md:h-[800px]"
-            src="home office-cena.Denoiser.jpg"
-            data-aos="fade-up"
+            class="object-cover rounded w-full max-w-[1700px] md:h-[800px] h-[300px]"
+            src="08_home office-cena4.Denoiser.jpg"
           />
+          <div class="absolute -rotate-90 right-[-25px] top-[40px]">
+            Home Office
+          </div>
         </div>
+        <div
+          class="w-full md:flex justify-center mb-10 relative"
+          data-aos="fade-up"
+        >
+          <div
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10 md:pr-2"
+          >
+            <img
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
+              src="09_lavanderia 1.jpg"
+            />
+            <div
+              class="absolute -rotate-90 right-[-15px] top-[35px] block md:hidden"
+            >
+              Lavanderia
+            </div>
+          </div>
+          <div
+            class="md:w-[50%] w-full flex justify-center my-5 relative pr-10"
+          >
+            <img
+              class="object-cover rounded w-full md:h-[600px] h-[300px]"
+              src="10_lavanderia 2.jpg"
+            />
+            <div class="absolute -rotate-90 right-[-15px] top-[35px]">
+              Lavanderia
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="divider pt-0 mt-0"></div>
+        <div
+          class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
+        >
+          <div class="texto-mini text-gray-500 pr-5">ÁREA</div>
+          <div class="text-right md:absolute nome-pessoas italic">65m²</div>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div>
+        <div
+          class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
+        >
+          <div class="texto-mini text-gray-500 md:pr-40 pr-5">LOCALIZAÇÃO</div>
+          <div class="text-right md:absolute nome-pessoas italic">
+            Bairro Butantã, São Paulo, São Paulo
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div>
+        <div
+          class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
+        >
+          <div class="texto-mini text-gray-500 md:pr-40 pr-5">ARQUITETURA</div>
+          <div class="text-right md:absolute nome-pessoas italic">
+            Bio Studio
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div>
+        <div
+          class="flex md:justify-start justify-between md:px-10 px-5 texto-cards-home content-center text-gray-700"
+        >
+          <div class="texto-mini text-gray-500 md:pr-40 pr-5">DESTAQUES</div>
+          <div class="text-right md:absolute nome-pessoas italic">
+            Município Bodoquena, Mato Grosso do Sul
+          </div>
+        </div>
+        <div class="divider"></div>
       </div>
     </div>
   </div>
@@ -244,7 +279,7 @@ import { Icon } from "astro-icon/components";
   }
 
   .texto-conteudo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .texto-cards-home {
     font-size: 1.3rem;
