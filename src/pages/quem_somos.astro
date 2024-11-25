@@ -9,7 +9,10 @@ import { Icon } from "astro-icon/components";
       <div class="overflow-x-hidden">
         <img class="w-full object-cover h-[600px]" src="Home/001.jpg" />
       </div>
-      <div class="sticky top-[70px] md:top-[100px] bg-white z-50">
+      <div
+        class="sticky top-[70px] md:top-[100px] bg-white z-50 transition"
+        id="titulo"
+      >
         <div class="divider pt-0 mt-0"></div>
         <div
           class="flex justify-between px-5 texto-cards-home content-center text-gray-500"
@@ -402,7 +405,7 @@ import { Icon } from "astro-icon/components";
           class="flex justify-between px-5 texto-cards-home content-center text-gray-500"
         >
           <div class="texto-mini text-gray-500 pr-5">NOSSA EQUIPE</div>
-          <div class="text-right">LARA MAKSOUD</div>
+          <div class="text-right">ISABEL SAAD</div>
         </div>
         <div class="divider"></div>
       </div>
@@ -418,6 +421,61 @@ import { Icon } from "astro-icon/components";
           />
           <div
             class="lg:w-[60%] md:w-[50%] w-full content-center md:pl-5 lg:pl-20"
+          >
+            <p
+              class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
+            >
+              Arquiteta desde 2018, graduada pela Escola da Cidade, em São
+              Paulo. Tem experiência com construção sustentável, arquitetura
+              saudável e desenvolvimento urbano integrado à comunidade local.
+            </p>
+
+            <p
+              class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-5"
+            >
+              Fez cursos de Bioarquitetura, Construção com bambu, Esgoto como
+              fonte de recursos e Soluções Baseadas na Natureza para pequena,
+              média e larga escala.
+            </p>
+            <p
+              class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-5"
+            >
+              Trabalhou como arquiteta voluntária em ONG's como Monte Azul,
+              Favela da Paz e Biosaneamento.
+            </p>
+            <p
+              class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-5"
+            >
+              Mestranda na Faculdade de Saúde Pública da USP no programa
+              Ambiente, Saúde e Sustentabilidade.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sticky top-[70px] md:top-[100px] bg-white z-50">
+        <div class="divider pt-0 mt-0"></div>
+        <div
+          class="flex justify-between px-5 texto-cards-home content-center text-gray-500"
+        >
+          <div class="texto-mini text-gray-500 pr-5">NOSSA EQUIPE</div>
+          <div class="text-right">LARA MAKSOUD</div>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div class="flex justify-center md:py-10" data-aos="fade-up">
+        <div
+          class="md:flex-row-reverse md:flex w-[1700px] max-w-[1700px] md:px-5"
+        >
+          <img
+            class="md:w-[60%] w-full md:h-[800px] h-[400px] object-contain rounded"
+            src="bel_blob.svg"
+          />
+          <img
+            class="md:w-[60%] w-full md:h-[800px] h-[400px] object-contain rounded absolute top-[-50px] lg:top[-120px] md:top-[-70px] md:right-[-50px]"
+            src="bel_sentada.png"
+          />
+          <div
+            class="lg:w-[60%] md:w-[50%] w-full content-center md:pr-5 lg:pr-20"
           >
             <p
               class="text-justify texto-conteudo align-middle text-gray-500 md:px-0 px-5 py-5 md:py-0"
@@ -502,6 +560,9 @@ import { Icon } from "astro-icon/components";
       font-size: 0.8rem;
     }
   }
+  .esconder {
+    visibility: hidden;
+  }
 </style>
 <script>
   import AOS from "aos";
@@ -513,7 +574,15 @@ import { Icon } from "astro-icon/components";
   const stickyElm = document.querySelector("#tatiana");
 
   const observer = new IntersectionObserver(
-    ([e]) => /*e.target.classList.toggle("isSticky", e.intersectionRatio < 1)*/ console.log("batata"),
+    ([
+      e,
+    ]) => /*e.target.classList.toggle("isSticky", e.intersectionRatio < 1)*/ {
+      if (e.intersectionRatio < 1) {
+        document.querySelector("#titulo").classList.remove("hidden");
+      } else {
+        document.querySelector("#titulo").classList.add("hidden");
+      }
+    },
     { threshold: [1] },
   );
 
