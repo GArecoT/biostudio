@@ -3,8 +3,8 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="w-full flex justify-center bg-white"
-  style="max-height: 100px; position: sticky; top: 0px; z-index: 1;"
+  class="w-full flex justify-center bg-white z-40"
+  style="max-height: 100px; position: sticky; top: 0px;"
 >
   <div
     class="w-full bg-red bg-white flex justify-between p-5 content-center page"
@@ -31,7 +31,7 @@ import { Icon } from "astro-icon/components";
   </div>
 </div>
 <div
-  class="w-screen h-screen z-10 fixed hidden bg-white top-0"
+  class="w-screen h-screen z-50 fixed hidden bg-white top-0"
   id="navbar_menu"
   style="animation: show 500ms forwards;"
 >
