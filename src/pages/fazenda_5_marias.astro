@@ -255,7 +255,7 @@ import { Icon } from "astro-icon/components";
 
   <div class="w-full flex justify-center bg-[#e7d0b0] p-5">
     <div class="w-full flex justify-between page">
-      <a href="salao" class="flex content-center texto-conteudo font-light">
+      <a href="consultorio" class="flex content-center texto-conteudo font-light">
         <Icon
           name="material-symbols-light:arrow-left-alt"
           class="botao-seta h-full mr-3"
@@ -263,7 +263,7 @@ import { Icon } from "astro-icon/components";
         <span>ANTERIOR</span>
       </a>
       <a
-        href="apartamento_nb"
+        href="casa_amarela"
         class="flex content-center texto-conteudo font-light"
       >
         <span>PRÓXIMO</span>
@@ -276,44 +276,7 @@ import { Icon } from "astro-icon/components";
   </div>
 
   <style>
-    .texto-mini {
-      font-size: 1.2rem;
-    }
 
-    .texto-esquerda-divider {
-      position: absolute;
-      left: calc(50% + 200px);
-      margin-top: -3px;
-    }
-
-    .texto-conteudo {
-      font-size: 1.5rem;
-    }
-    .texto-cards-home {
-      font-size: 1.3rem;
-    }
-    @media only screen and (max-width: 1095px) {
-      .texto-conteudo {
-        font-size: 1.2rem;
-      }
-      .texto-cards-home {
-        font-size: 1.2rem;
-      }
-    }
-
-    @media only screen and (max-width: 850px) {
-      .texto-esquerda-divider {
-        position: relative;
-        left: auto;
-        margin-top: 0px;
-      }
-      .texto-cards-home {
-        font-size: 1rem;
-      }
-      .texto-mini {
-        font-size: 0.8rem;
-      }
-    }
   </style>
   <script>
     import AOS from "aos";
