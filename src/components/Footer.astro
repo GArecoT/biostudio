@@ -43,17 +43,39 @@ import { Icon } from "astro-icon/components";
         <div>
           <a href="/">HOME</a>
         </div>
-        <div>PROJETOS</div>
-        <div class="ml-5"><a href="fazenda_5_marias">FAZENDA 5 MARIAS</a></div>
-        <div class="ml-5"><a href="apartamento_nb">APARTAMENTO NB</a></div>
-        <div class="ml-5"><a href="consultorio">CONSULTÓRIO FF</a></div>
-        <div class="ml-5">
-          <a href="dormitorio_infantil">QUARTO INFANTIL LC</a>
-        </div>
-        <div class="ml-5">
-          <a href="dormitorio_bebe">QUARTO PRIMEIRA INFÂNCIA</a>
-        </div>
-        <div class="ml-5"><a href="salao">SALÃO DE BELEZA EM</a></div>
+
+        <details close class="cursor-pointer">
+          <summary>PROJETOS</summary>
+          <ul>
+            <li class="ml-5">
+              <a href="fazenda_5_marias">FAZENDA 5 MARIAS</a>
+            </li>
+            <li class="ml-5">
+              <a href="casa_amarela">CASA AMARELA</a>
+            </li>
+            <li class="ml-5">
+              <a href="salao">SALÃO EVA</a>
+            </li>
+            <li class="ml-5">
+              <a href="apartamento_vh">APARTAMENTO VH</a>
+            </li>
+            <li class="ml-5">
+              <a href="dormitorio_infantil">DORMITÓRIO LC</a>
+            </li>
+            <li class="ml-5">
+              <a href="consultorio_jp">CONSULTÓRIO DERMATOLÓGICO JP</a>
+            </li>
+            <li class="ml-5">
+              <a href="consultorio_mk">CONSULTÓRIO ORTOPÉDICO MK</a>
+            </li>
+            <li class="ml-5">
+              <a href="consultorio_cf">CONSULTÓRIO ODONTOLÓGICO CF</a>
+            </li>
+            <li class="ml-5">
+              <a href="consultorio">CONSULTÓRIO FF</a>
+            </li>
+          </ul>
+        </details>
         <div>
           <a href="quem_somos">QUEM SOMOS</a>
         </div>
@@ -65,6 +87,9 @@ import { Icon } from "astro-icon/components";
         </div>
         <div style="color: #e7d0b0;" class="font-light">
           POLÍTICA DE PRIVACIDADE © 2024 BY BIO STUDIO
+        </div>
+        <div style="color: #e7d0b0;" class="font-light mt-10">
+          Desenvolvido por: <a>Gabriel Areco</a> e <a>Sandra Areco</a>
         </div>
       </div>
     </div>
