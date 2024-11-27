@@ -6,7 +6,10 @@ import { Icon } from "astro-icon/components";
 <Layout title="Bio Studio">
   <div class="flex justify-center">
     <div class="page">
-      <div class="carousel w-full md:h-[700px] mt-[-100px] h-[500px]">
+      <div
+        class="carousel w-full md:h-[700px] mt-[-100px] h-[500px]"
+        id="carrossel"
+      >
         <div id="slide1" class="carousel-item relative w-full">
           <img
             src="Apto/01_sala 1.png"
@@ -336,7 +339,19 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </Layout>
-
+<script>
+  const carrossel = document.querySelector("#carrossel");
+  let click = 0;
+  carrossel.addEventListener("click", () => {
+    setTimeout(() => {
+      click = 0;
+    }, 5000);
+    click = click + 1;
+    if (click > 20) {
+      window.location.href = "/nada_aqui";
+    }
+  });
+</script>
 <style>
   main {
     margin: auto;
