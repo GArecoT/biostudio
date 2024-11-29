@@ -345,7 +345,9 @@ import { Icon } from "astro-icon/components";
   carrossel.addEventListener("click", () => {
     setTimeout(() => {
       click = 0;
+      console.log("zerou", click);
     }, 5000);
+    console.log(click);
     click = click + 1;
     if (click > 20) {
       window.location.href = "/nada_aqui";
